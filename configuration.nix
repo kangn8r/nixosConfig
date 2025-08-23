@@ -129,6 +129,7 @@
     mangohud
     gitui
     gcc
+    cargo
   ];
 
   fonts.packages = with pkgs; [
