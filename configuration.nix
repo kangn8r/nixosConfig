@@ -131,6 +131,7 @@
     gcc
     cargo
     lua-language-server
+    stylua
   ];
 
   fonts.packages = with pkgs; [
