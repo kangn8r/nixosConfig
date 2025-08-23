@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -85,10 +85,13 @@
   users.users.kangn8r = {
     isNormalUser = true;
     description = "Serra Kangas";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -97,10 +100,13 @@
   programs.steam.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   #enable flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
-  
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -138,7 +144,6 @@
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
   ];
-
 
   nix.gc = {
     automatic = true;
