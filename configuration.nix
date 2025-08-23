@@ -171,6 +171,7 @@
       UseDns = true;
       X11Forwarding = false;
       PermitRootLogin = "no"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
+      openFirewall = true;
     };
   };
   # Open ports in the firewall.
