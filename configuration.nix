@@ -128,7 +128,7 @@
     gamemode
     mangohud
     gitui
-    libgcc
+    gcc
   ];
 
   fonts.packages = with pkgs; [
