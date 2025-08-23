@@ -132,6 +132,7 @@
     cargo
     lua-language-server
     stylua
+    nixfmt-rfc-style
   ];
 
   fonts.packages = with pkgs; [
