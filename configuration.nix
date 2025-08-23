@@ -130,6 +130,7 @@
     gitui
     gcc
     cargo
+    lua-language-server
   ];
 
   fonts.packages = with pkgs; [
