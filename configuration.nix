@@ -139,7 +139,7 @@
     lua-language-server
     stylua
     nixfmt-rfc-style
-    libreoffice-fresh
+    libreoffice-qt6-fresh-unwrapped
   ];
 
   fonts.packages = with pkgs; [
