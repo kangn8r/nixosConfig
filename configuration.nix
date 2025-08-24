@@ -168,6 +168,14 @@
     };
   };
 
+
+  services.fail2ban = {
+    enable = true;
+    maxretry = 5;
+    bantime = "24h";
+
+  };
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

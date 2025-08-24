@@ -43,6 +43,7 @@
     bat
     nh
     tealdeer
+    fail2ban
   ];
 
   fonts.packages = with pkgs; [
