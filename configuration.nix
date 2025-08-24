@@ -8,6 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./modules/packages.nix
   ];
 
   # Bootloader.
@@ -95,9 +96,6 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-  programs.steam.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -107,6 +105,7 @@
     "flakes"
   ];
 
+<<<<<<< Updated upstream
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -140,12 +139,16 @@
     stylua
     nixfmt-rfc-style
     libreoffice-qt6-fresh-unwrapped
+    cbonsai
+    cowsay
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
   ];
 
+=======
+>>>>>>> Stashed changes
   nix.gc = {
     automatic = true;
     dates = "daily";
