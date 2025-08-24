@@ -8,7 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./modules/packages.nix
+     ./modules/packages.nix
   ];
 
   # Bootloader.
@@ -105,7 +105,6 @@
     "flakes"
   ];
 
-<<<<<<< Updated upstream
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -147,8 +146,6 @@
     nerd-fonts.fira-code
   ];
 
-=======
->>>>>>> Stashed changes
   nix.gc = {
     automatic = true;
     dates = "daily";
