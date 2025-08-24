@@ -92,7 +92,7 @@
     ];
     packages = with pkgs; [
       kdePackages.kate
-      # thunderbird
+      kdePackages.kontact
     ];
   };
 
