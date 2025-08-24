@@ -145,12 +145,6 @@
     nerd-fonts.fira-code
   ];
 
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 5d";
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -162,17 +156,17 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh = {
-  #   enable = true;
-  #   ports = [ 22 ];
-  #   settings = {
-  #     PasswordAuthentication = true;
-  #     AllowUsers = [ "kangn8r" ]; # Allows all users by default. Can be [ "user1" "user2" ]
-  #     UseDns = true;
-  #     X11Forwarding = false;
-  #     PermitRootLogin = "no"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
-  #   };
-  # };
+  services.openssh = {
+    enable = true;
+    ports = [ 22 ];
+    settings = {
+      PasswordAuthentication = true;
+      AllowUsers = [ "kangn8r" ]; # Allows all users by default. Can be [ "user1" "user2" ]
+      UseDns = true;
+      X11Forwarding = false;
+      PermitRootLogin = "no"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
+    };
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

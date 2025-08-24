@@ -39,6 +39,10 @@
     nixfmt-rfc-style
     libreoffice-qt6-fresh-unwrapped
     cbonsai
+    nvd
+    bat
+    nh
+    tealdeer
   ];
 
   fonts.packages = with pkgs; [
