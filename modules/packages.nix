@@ -5,10 +5,16 @@
   programs.firefox.enable = true;
   programs.steam.enable = true;
 
+  # programs.wireshark = {
+  #   enable = true;
+  #   usbmon.enable = true;
+  #   dumpcap.enable = true;
+  #   package = pkgs.wireshark; 
+  # };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wireshark
     zellij
     wget
     neovim

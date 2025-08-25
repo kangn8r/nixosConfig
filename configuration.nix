@@ -89,7 +89,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-      "wireshark"
+      # "wireshark"
     ];
     packages = with pkgs; [
       kdePackages.kate
@@ -137,10 +137,6 @@
 
   };
 
-  programs.wireshark = {
-    dumpcap.enable = true;
-    usbmon.enable = true;
-  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
