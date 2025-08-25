@@ -39,7 +39,6 @@
     heroic
     btop
     umu-launcher
-    home-manager
     pipes-rs
     crawlTiles
     gamemode
