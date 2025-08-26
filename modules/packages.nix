@@ -15,6 +15,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    vlc
+    # gitui
     nbsdgames
     _2048-in-terminal
     greed
@@ -49,7 +51,7 @@
     crawlTiles
     gamemode
     mangohud
-    gitui
+    # gitui
     gcc
     cargo
     lua-language-server
