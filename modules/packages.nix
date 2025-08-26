@@ -16,7 +16,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     nil
-    # yt-dlp
+    yt-dlp
     ncdu
     dust
     mangal
