@@ -9,13 +9,14 @@
   #   enable = true;
   #   usbmon.enable = true;
   #   dumpcap.enable = true;
-  #   package = pkgs.wireshark; 
+  #   package = pkgs.wireshark;
   # };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    yt-dlp
+    nil
+    # yt-dlp
     ncdu
     dust
     mangal

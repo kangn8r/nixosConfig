@@ -105,7 +105,6 @@
     "flakes"
   ];
 
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -129,14 +128,12 @@
     };
   };
 
-
   services.fail2ban = {
     enable = true;
     maxretry = 5;
     bantime = "24h";
 
   };
-
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
