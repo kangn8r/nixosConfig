@@ -16,7 +16,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     nbsdgames
-    _2048-cli
+    _2048-in-terminal
     greed
     vitetris
     kitty
