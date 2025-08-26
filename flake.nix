@@ -15,13 +15,15 @@
         config = {
           allowUnfree = true;
         };
+
+        overlays = [(final: prev: {
+          
+        })];
+
+
       };
 
-      nixpkgsMaster = import nixpkgsMaster {
-        config = {
-          allowUnfree = true;
-        };
-      };
+      
 
     in
     {
@@ -33,9 +35,7 @@
             ./configuration.nix
           ];
 
-          environment.systemPackages = with nixpkgsMaster; [
-            yt-dlp
-          ];
+       
         };
       };
     };
