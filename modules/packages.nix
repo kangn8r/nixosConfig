@@ -51,7 +51,6 @@
     crawlTiles
     gamemode
     mangohud
-    # gitui
     gcc
     cargo
     lua-language-server
