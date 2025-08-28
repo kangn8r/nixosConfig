@@ -17,7 +17,8 @@
   environment.systemPackages = with pkgs; [
     cowsay
     vlc
-    # gitui
+    gitui
+    lazygit
     nbsdgames
     _2048-in-terminal
     greed
