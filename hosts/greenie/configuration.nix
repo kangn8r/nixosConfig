@@ -19,28 +19,34 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-
-
   #NVIDIA Drivers setup
 
   hardware.graphics = {
     enable = true;
   };
 
- services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
- hardware.nvidia = {
-   modesetting.enable = true;
+  hardware.nvidia = {
+    modesetting.enable = true;
 
-   #change this if problems after sleep v
-   powerManagement.enable = false;
+    #change this if problems after sleep v
+    powerManagement.enable = false;
 
-   open = false;
+    open = false;
 
-   nvidiaSettings = true;
+    nvidiaSettings = true;
 
-   package = config.boot.kernelPackages.nvidiaPackages.stable;
- };
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+
+  };
+
+  hardware.nvidia.prime = {
+    sync.enable = true;
+
+    nvidiaBusId = "PCI:1:0:0";
+    amdgpuBusId = "PCI:5:0:0";
+  };
 
   networking.hostName = "greenie"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

@@ -15,14 +15,13 @@
           allowUnfree = true;
         };
 
-        overlays = [(final: prev: {
-          
-        })];
+        overlays = [
+          (final: prev: {
 
+          })
+        ];
 
       };
-
-      
 
     in
     {
@@ -34,7 +33,6 @@
             ./hosts/kangasNixDell/configuration.nix
           ];
 
-       
         };
 
         greenie = nixpkgs.lib.nixosSystem {
@@ -44,7 +42,6 @@
             ./hosts/greenie/configuration.nix
           ];
 
-       
         };
       };
     };
