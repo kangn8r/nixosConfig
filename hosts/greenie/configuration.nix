@@ -8,6 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./hostSpecificPackages.nix
     ../../modules/packages.nix
   ];
 
@@ -17,6 +18,29 @@
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+
+
+  #NVIDIA Drivers setup
+
+  hardware.graphics = {
+    enable = true;
+  };
+
+ services.xserver.videoDrivers = ["nvidia"];
+
+ hardware.nvidia = {
+   modesetting.enable = true;
+
+   #change this if problems after sleep v
+   powerManagement.enable = false;
+
+   open = false;
+
+   nvidiaSettings = true;
+
+   package = config.boot.kernelPackages.nvidiaPackages.stable;
+ };
 
   networking.hostName = "greenie"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
