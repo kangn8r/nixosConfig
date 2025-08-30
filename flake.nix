@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    # nixpkgsMaster.url = "github:nixos/nixpkgs/master";
   };
 
   outputs =
@@ -32,7 +31,17 @@
           specialArgs = { inherit system; };
 
           modules = [
-            ./configuration.nix
+            ./hosts/kangasNixDell/configuration.nix
+          ];
+
+       
+        };
+
+        greenie = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit system; };
+
+          modules = [
+            ./hosts/greenie/configuration.nix
           ];
 
        
