@@ -31,6 +31,7 @@
 
           modules = [
             ./hosts/kangasNixDell/configuration.nix
+            ./modules/hyprland.nix
           ];
 
         };

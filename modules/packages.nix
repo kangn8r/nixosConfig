@@ -4,7 +4,6 @@
   # Install firefox.
   programs.firefox.enable = true;
   programs.steam.enable = true;
-
   # programs.wireshark = {
   #   enable = true;
   #   usbmon.enable = true;
