@@ -21,6 +21,7 @@
     networkmanagerapplet
     hyprpaper
     hyprlock
+    hypridle
     hyprls
     rofi
     waybar
