@@ -63,7 +63,7 @@
     lua-language-server
     stylua
     nixfmt-rfc-style
-    libreoffice-qt6-fresh-unwrapped
+    libreoffice-qt6-fresh
     cbonsai
     nvd
     bat
