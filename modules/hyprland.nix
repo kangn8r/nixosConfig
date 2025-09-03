@@ -13,6 +13,7 @@
   };
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+    rofi-power-menu
     iwd
     hyprpolkitagent
     brightnessctl
