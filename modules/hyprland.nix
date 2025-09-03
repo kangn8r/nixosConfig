@@ -13,6 +13,7 @@
   };
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+    gnome-keyring
     rofi-power-menu
     iwd
     hyprpolkitagent
