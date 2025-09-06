@@ -11,8 +11,15 @@
       AutoConnect = true;
     };
   };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+    xdg-desktop-portal-gtk
     gnome-keyring
     rofi-power-menu
     iwd
