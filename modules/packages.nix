@@ -10,6 +10,11 @@
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    shellAliases = {
+      ls = "eza --icons";
+      nixCleanup = "sudo nh clean all --keep 3";
+      nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
+    };
  
  };
   programs.zsh.ohMyZsh = {

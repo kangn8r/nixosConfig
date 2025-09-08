@@ -14,6 +14,11 @@
     ../../modules/unifiedConfig.nix
   ];
 
+
+  programs.zsh.shellAliases = {
+    nixFlakeRebuild = "nh os switch --ask -H kangasNixDell ~/nixosConfig/";
+  }; 
+
   # Bootloader.
   networking.hostName = "kangasNixDell"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

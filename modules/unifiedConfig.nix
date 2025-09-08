@@ -79,8 +79,9 @@
     packages = with pkgs; [
       kdePackages.kate
     ];
-    shell = pkgs.zsh;
   };
+
+  users.defaultUserShell = pkgs.zsh;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
