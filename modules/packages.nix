@@ -4,6 +4,12 @@
   # Install firefox.
   programs.firefox.enable = true;
   programs.steam.enable = true;
+  programs.zsh.enable = true;
+  programs.zsh.ohMyZsh = {
+    enable = true;
+    theme = "sammy";
+    plugins = [];
+  };
   # programs.wireshark = {
   #   enable = true;
   #   usbmon.enable = true;
