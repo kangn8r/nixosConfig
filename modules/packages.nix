@@ -14,6 +14,7 @@
       ls = "eza --icons";
       nixCleanup = "sudo nh clean all --keep 3";
       nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
+      cd = "z";
     };
  
  };
@@ -32,6 +33,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    zoxide
     zsh-powerlevel10k
     wesnoth
     superTux
