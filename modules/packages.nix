@@ -23,6 +23,10 @@
     theme = "superjarin";
     plugins = [];
   };
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
   # programs.wireshark = {
   #   enable = true;
   #   usbmon.enable = true;
@@ -33,7 +37,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    zoxide
     zsh-powerlevel10k
     wesnoth
     superTux
