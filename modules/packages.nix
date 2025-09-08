@@ -4,10 +4,17 @@
   # Install firefox.
   programs.firefox.enable = true;
   programs.steam.enable = true;
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+ 
+ };
   programs.zsh.ohMyZsh = {
     enable = true;
-    theme = "sammy";
+    theme = "superjarin";
     plugins = [];
   };
   # programs.wireshark = {
@@ -20,6 +27,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    zsh-powerlevel10k
     wesnoth
     superTux
     ripgrep
