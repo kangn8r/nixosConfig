@@ -37,6 +37,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    python313Packages.debugpy
     zsh-powerlevel10k
     wesnoth
     superTux
@@ -71,7 +72,7 @@
     fzf
     git
     mc
-    python314
+    python313
     unzip
     nodejs_24
     vesktop
