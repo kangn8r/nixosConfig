@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-
+		jdt-language-server
     stylua
     lua-language-server
     nil
