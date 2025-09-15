@@ -37,7 +37,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    python313Packages.debugpy
     zsh-powerlevel10k
     wesnoth
     superTux
@@ -56,7 +55,6 @@
     greed
     vitetris
     kitty
-    nil
     yt-dlp
     ncdu
     dust
@@ -87,8 +85,6 @@
     mangohud
     gcc
     cargo
-    lua-language-server
-    stylua
     nixfmt-rfc-style
     libreoffice-qt6-fresh
     cbonsai
