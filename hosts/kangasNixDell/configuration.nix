@@ -12,6 +12,7 @@
     ../../modules/packages.nix
     ../../modules/hyprland.nix
     ../../modules/unifiedConfig.nix
+		../../modules/lspPack.nix
   ];
 
 
