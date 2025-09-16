@@ -11,11 +11,13 @@
     ./hostSpecificPackages.nix
     ../../modules/packages.nix
     ../../modules/unifiedConfig.nix
-		../../modules/lspPack.nix
+    ../../modules/lspPack.nix
   ];
 
+  # needed for piper
+  services.ratbagd.enable = true;
 
-programs.zsh.shellAliases = {
+  programs.zsh.shellAliases = {
     nixFlakeRebuild = "nh os switch --ask -H theBeast ~/nixosConfig/";
   };
 
@@ -45,8 +47,8 @@ programs.zsh.shellAliases = {
   hardware.nvidia.prime = {
     sync.enable = true;
 
-     nvidiaBusId = "PCI:1:0:0";
-     amdgpuBusId = "PCI:0:2:0";
+    nvidiaBusId = "PCI:1:0:0";
+    amdgpuBusId = "PCI:0:2:0";
   };
 
   networking.hostName = "theBeast"; # Define your hostname.

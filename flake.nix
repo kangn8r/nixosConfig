@@ -44,7 +44,7 @@
 
         };
 
-theBeast = nixpkgs.lib.nixosSystem {
+        theBeast = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit system; };
 
           modules = [

@@ -11,7 +11,7 @@
     ./hostSpecificPackages.nix
     ../../modules/packages.nix
     ../../modules/unifiedConfig.nix
-		../../modules/lspPack.nix
+    ../../modules/lspPack.nix
   ];
 
   # Bootloader.

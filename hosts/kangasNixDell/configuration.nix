@@ -12,13 +12,12 @@
     ../../modules/packages.nix
     ../../modules/hyprland.nix
     ../../modules/unifiedConfig.nix
-		../../modules/lspPack.nix
+    ../../modules/lspPack.nix
   ];
-
 
   programs.zsh.shellAliases = {
     nixFlakeRebuild = "nh os switch --ask -H kangasNixDell ~/nixosConfig/";
-  }; 
+  };
 
   # Bootloader.
   networking.hostName = "kangasNixDell"; # Define your hostname.

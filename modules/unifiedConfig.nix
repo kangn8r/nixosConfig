@@ -1,4 +1,4 @@
-{configs, pkgs, ...}:
+{ configs, pkgs, ... }:
 
 {
   boot.loader.systemd-boot.enable = true;
@@ -121,6 +121,5 @@
     bantime = "24h";
 
   };
-
 
 }

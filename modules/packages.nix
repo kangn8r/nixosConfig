@@ -16,12 +16,12 @@
       nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
       cd = "z";
     };
- 
- };
+
+  };
   programs.zsh.ohMyZsh = {
     enable = true;
     theme = "superjarin";
-    plugins = [];
+    plugins = [ ];
   };
   programs.zoxide = {
     enable = true;
