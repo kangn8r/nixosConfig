@@ -43,6 +43,15 @@
           ];
 
         };
+
+theBeast = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit system; };
+
+          modules = [
+            ./hosts/theBeast/configuration.nix
+          ];
+
+        };
       };
     };
 }
