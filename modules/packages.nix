@@ -5,6 +5,7 @@
 		prismlauncher
 		libunity
 		lutris
+		jdk
     zsh-powerlevel10k
     wesnoth
     superTux
