@@ -1,42 +1,8 @@
 { pkgs, ... }:
 
 {
-  # Install firefox.
-  programs.firefox.enable = true;
-  programs.steam.enable = true;
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
-    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-    shellAliases = {
-      ls = "eza --icons";
-      nixCleanup = "sudo nh clean all --keep 3";
-      nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
-      cd = "z";
-    };
-
-  };
-  programs.zsh.ohMyZsh = {
-    enable = true;
-    theme = "superjarin";
-    plugins = [ ];
-  };
-  programs.zoxide = {
-    enable = true;
-    enableZshIntegration = true;
-  };
-  # programs.wireshark = {
-  #   enable = true;
-  #   usbmon.enable = true;
-  #   dumpcap.enable = true;
-  #   package = pkgs.wireshark;
-  # };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
+		prismlauncher
 		libunity
 		lutris
     zsh-powerlevel10k
@@ -96,6 +62,41 @@
     tealdeer
     fail2ban
   ];
+
+  # Install firefox.
+  programs.firefox.enable = true;
+  programs.steam.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    shellAliases = {
+      ls = "eza --icons";
+      nixCleanup = "sudo nh clean all --keep 3";
+      nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
+      cd = "z";
+    };
+
+  };
+  programs.zsh.ohMyZsh = {
+    enable = true;
+    theme = "superjarin";
+    plugins = [ ];
+  };
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+  # programs.wireshark = {
+  #   enable = true;
+  #   usbmon.enable = true;
+  #   dumpcap.enable = true;
+  #   package = pkgs.wireshark;
+  # };
+
+
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-mono
