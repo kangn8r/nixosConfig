@@ -2,10 +2,10 @@
 
 {
   environment.systemPackages = with pkgs; [
-		prismlauncher
-		libunity
-		lutris
-		jdk
+    prismlauncher
+    libunity
+    lutris
+    jdk
     zsh-powerlevel10k
     wesnoth
     superTux
@@ -96,8 +96,6 @@
   #   dumpcap.enable = true;
   #   package = pkgs.wireshark;
   # };
-
-
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-mono

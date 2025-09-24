@@ -7,10 +7,10 @@
     nil
     python313Packages.debugpy
     python313Packages.python-lsp-server
-		python313Packages.rope
-		python313Packages.pyflakes
-		hyprls
-		lua-language-server
+    python313Packages.rope
+    python313Packages.pyflakes
+    hyprls
+    lua-language-server
   ];
 
 }
