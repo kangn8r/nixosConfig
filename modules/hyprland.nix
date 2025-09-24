@@ -19,6 +19,7 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+		rofimoji
     xdg-desktop-portal-gtk
     gnome-keyring
     rofi-power-menu
