@@ -3,12 +3,6 @@
 {
 
   environment.systemPackages = with pkgs; [
-    libtool
-    gnumake
-    cmake
-    emacs
-    fd
-    clang
     prismlauncher
     libunity
     lutris

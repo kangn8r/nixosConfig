@@ -13,6 +13,7 @@
     ../../modules/hyprland.nix
     ../../modules/unifiedConfig.nix
     ../../modules/lspPack.nix
+    ../../modules/emacs.nix
   ];
 
   programs.zsh.shellAliases = {

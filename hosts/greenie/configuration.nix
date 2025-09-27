@@ -12,6 +12,7 @@
     ../../modules/packages.nix
     ../../modules/unifiedConfig.nix
     ../../modules/lspPack.nix
+    ../../modules/emacs.nix
   ];
 
   # Bootloader.
