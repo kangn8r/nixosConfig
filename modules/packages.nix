@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		obs-studio
 		vscode
     prismlauncher
     libunity
