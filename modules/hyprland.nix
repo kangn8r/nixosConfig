@@ -35,6 +35,7 @@
     hyprls
     rofi
     waybar
+		eww
   ];
 
 }
