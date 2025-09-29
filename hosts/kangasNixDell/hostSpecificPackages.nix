@@ -4,6 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     teams-for-linux
+		ciscoPacketTracer8
   ];
 
 }
