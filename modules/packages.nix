@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		nmap
 		obs-studio
 		vscode
     prismlauncher

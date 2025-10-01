@@ -3,8 +3,8 @@
 {
 
   environment.systemPackages = with pkgs; [
-    teams-for-linux
 		ciscoPacketTracer8
+    teams-for-linux
   ];
 
 }
