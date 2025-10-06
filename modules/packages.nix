@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		varia
 		nmap
 		obs-studio
 		vscode
@@ -54,6 +55,7 @@
     umu-launcher
     pipes-rs
     crawlTiles
+		crawl
     gamemode
     mangohud
     gcc
