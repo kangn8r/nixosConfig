@@ -3,7 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-		ciscoPacketTracer8
+		zotero
     teams-for-linux
   ];
 
