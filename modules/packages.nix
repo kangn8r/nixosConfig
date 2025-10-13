@@ -3,9 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-		gparted
 		mediawriter
-		rpi-imager
 		varia
 		nmap
 		obs-studio
