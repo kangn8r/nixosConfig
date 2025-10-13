@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		protonup-rs
 		mediawriter
 		varia
 		nmap
