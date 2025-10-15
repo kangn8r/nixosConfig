@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		unixtools.arp
 		protonup-rs
 		mediawriter
 		varia
