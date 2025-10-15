@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		zenmap
 		unixtools.arp
 		protonup-rs
 		mediawriter
