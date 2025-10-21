@@ -3,7 +3,6 @@
 {
 
   environment.systemPackages = with pkgs; [
-		godot
 		zenmap
 		unixtools.arp
 		protonup-rs
