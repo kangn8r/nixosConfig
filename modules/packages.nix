@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		godot
 		zenmap
 		unixtools.arp
 		protonup-rs
@@ -67,6 +68,7 @@
     nixfmt-rfc-style
     libreoffice-qt6-fresh
     cbonsai
+		cmatrix
     nvd
     bat
     nh
