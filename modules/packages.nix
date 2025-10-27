@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		cmatrix
 		zenmap
 		unixtools.arp
 		protonup-rs
