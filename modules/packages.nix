@@ -68,6 +68,7 @@
     nixfmt-rfc-style
     libreoffice-qt6-fresh
     cbonsai
+		cmatrix
     nvd
     bat
     nh
