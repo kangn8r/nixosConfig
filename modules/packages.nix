@@ -3,6 +3,9 @@
 {
 
   environment.systemPackages = with pkgs; [
+		protontricks
+		fswebcam
+		dosbox
 		cmatrix
 		zenmap
 		unixtools.arp
