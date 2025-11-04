@@ -3,6 +3,11 @@
 {
 
   environment.systemPackages = with pkgs; [
+		zip
+		unzip
+		rar
+		unrar
+		unp
 		protontricks
 		fswebcam
 		dosbox
