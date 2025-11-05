@@ -3,6 +3,9 @@
 {
 
   environment.systemPackages = with pkgs; [
+		cataclysm-dda
+		minicom
+		p7zip
 		zip
 		unzip
 		rar
