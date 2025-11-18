@@ -3,6 +3,9 @@
 {
 
   environment.systemPackages = with pkgs; [
+		obsidian
+		bchunk
+		weechat
 		cataclysm-dda
 		minicom
 		p7zip
