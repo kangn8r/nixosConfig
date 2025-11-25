@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+		rust-analyzer
+		rustup
     jdt-language-server
     stylua
     nil

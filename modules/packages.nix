@@ -3,6 +3,9 @@
 {
 
   environment.systemPackages = with pkgs; [
+		jetbrains.rust-rover
+		superfile
+		wine
 		obsidian
 		bchunk
 		weechat
@@ -104,6 +107,7 @@
       nixCleanup = "sudo nh clean all --keep 3";
       nixFlakeUpdate = "nix flake update --flake ~/nixosConfig/";
       cd = "z";
+			spf = "superfile";
     };
 
   };
