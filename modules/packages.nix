@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		forge-mtg
 		jetbrains.rust-rover
 		superfile
 		wine
