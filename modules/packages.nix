@@ -121,12 +121,13 @@
     enable = true;
     enableZshIntegration = true;
   };
-  # programs.wireshark = {
-  #   enable = true;
-  #   usbmon.enable = true;
-  #   dumpcap.enable = true;
-  #   package = pkgs.wireshark;
-  # };
+
+  programs.wireshark = {
+    enable = true;
+    usbmon.enable = true;
+    dumpcap.enable = true;
+    package = pkgs.wireshark;
+  };
 
   fonts.packages = with pkgs; [
     nerd-fonts.fira-mono
