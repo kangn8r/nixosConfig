@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		glab
 		ffmpeg
 		streamrip
 		nicotine-plus
