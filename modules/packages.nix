@@ -3,6 +3,8 @@
 {
 
   environment.systemPackages = with pkgs; [
+		streamrip
+		nicotine-plus
 		forge-mtg
 		jetbrains.rust-rover
 		superfile
