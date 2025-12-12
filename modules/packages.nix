@@ -3,6 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
+		ffmpeg
 		streamrip
 		nicotine-plus
 		forge-mtg
